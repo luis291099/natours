@@ -36,6 +36,16 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+
     /* É necessário definir o content (mesmo que vazio)
     e o display */
     &::after {
