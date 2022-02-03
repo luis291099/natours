@@ -22,22 +22,3 @@
 @import 'layout/navigation';
 
 @import 'pages/home';
-
-
-/* Com o avanço dos navegadores 
-não é mais necessário definir um arquivo de reset ou
-normalização, nós podemos usar o seletor global e definir um estilo
-padrão
-*/
-
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-/* Não é suportado nos antigos IEs */
-html {
-    font-size: 62.5%;
-}
