@@ -27,11 +27,19 @@
         overflow: hidden;
         opacity: 0;
         transition: all .4s .2s;
+
+        @include respond(tab-port) {
+            width: 90%;
+        }
     }
 
     &__left  {
         width: 33.33%;
         display: table-cell;
+
+        @include respond(tab-land) {
+            display: none;
+        }
     }
 
     &__right {
@@ -62,6 +70,10 @@
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
+
+        @include respond(phone) {
+            column-count: 1;
+        }
     }
 
     &:target &__content {

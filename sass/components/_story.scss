@@ -47,7 +47,7 @@
         transform: skewX(12deg);
 
         @include respond(phone) {
-            transform: kewX(0);;
+            transform: skewX(0);;
         }
     }
 
